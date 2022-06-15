@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo"><img src="./img/logo_dark.png" alt="logo caret"></div>
+        <div class="logo">
+          <img src="./img/logo_dark.png" alt="logo caret" />
+        </div>
         <div class="btn_idioma">
           <select name="idioma" id="idioma">
             <option value="esp">Es</option>
@@ -24,57 +28,111 @@
 
     <main>
       <section class="videos_container">
-        <div class="video_presentacion"><iframe width="560" height="315" src="https://www.youtube.com/embed/dusvHedWyAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="video_presentacion"><iframe width="560" height="315" src="https://www.youtube.com/embed/bxxLHFZwIwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="video_presentacion"><iframe width="560" height="315" src="https://www.youtube.com/embed/ilkEoKphWCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video_presentacion">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dusvHedWyAE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video_presentacion">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/bxxLHFZwIwY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video_presentacion">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ilkEoKphWCQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
       <section class="contact">
         <form action=".">
           <h3>Contáctenos hoy para programar una demostración gratuita</h3>
-
-          <input
-            type="text"
-            name="nombre_completo"
-            id="nombre_completo"
-            placeholder="Nombre Completo"
-            required
-          />
-          <input
-            type="text"
-            name="nombre_empresa"
-            id="nombre_empresa"
-            placeholder="Nombre de la empresa"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Correo electronico"
-            required
-          />
-          <input
-            type="tel"
-            name="telefono_empresa"
-            id="telefono_empresa"
-            placeholder="Telefono de la empresa"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
-          />
-          <input
-            type="text"
-            name="extension_telefonica"
-            id="extension_telefonica"
-            placeholder="Extension telefonica"
-          />
-          <input
-            type="text"
-            name="ciudad"
-            id="ciudad"
-            placeholder="Ciudad"
-            required
-          />
-
+          <div class="input-container">
+            <input
+              type="text"
+              class="text-input"
+              name="nombre_completo"
+              id="nombre_completo"
+              placeholder="Nombre Completo"
+              required
+            />
+            <label class="label" for="nombre_completo">Nombre Completo</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="text-input"
+              name="nombre_empresa"
+              id="nombre_empresa"
+              placeholder="Nombre de la empresa"
+              required
+            />
+            <label class="label" for="nombre_empresa"
+              >Nombre de la Empresa</label
+            >
+          </div>
+          <div class="input-container">
+            <input
+              type="email"
+              class="text-input"
+              name="email"
+              id="email"
+              placeholder="Correo electronico"
+              required
+            />
+            <label class="label" for="email">Correo Electronico</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="tel"
+              class="text-input"
+              name="telefono_empresa"
+              id="telefono_empresa"
+              placeholder="Telefono de la empresa"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <label class="label" for="nombre_completo">Username</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="text-input"
+              name="extension_telefonica"
+              id="extension_telefonica"
+              placeholder="Extension telefonica"
+            />
+            <label class="label" for="nombre_completo">Username</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="text-input"
+              name="ciudad"
+              id="ciudad"
+              placeholder="Ciudad"
+              required
+            />
+            <label class="label" for="nombre_completo">Username</label>
+          </div>
           <fieldset>
             <legend>Módulos de su interés</legend>
 
@@ -103,159 +161,30 @@
             rows="10"
             required
           ></textarea>
-          <button type="submit" class="form_submit">Enviar solicitd de la demostracion</button>
+          <button type="submit" class="form_submit">
+            Enviar solicitd de la demostracion
+          </button>
         </form>
       </section>
     </main>
     <footer>
-        <section class="empresa">
-            <img src="./img/Caret_blanco.png" alt="logo caret">
-            <p>Copyright copyright 2022 Todos los derechos reservados.</p>
-            <a href="#">Aviso de privaciidad</a>
-        </section>
-        <section class="contacto">
-            <p>📍Tijuana, Baja california</p>
-            <a href="mailto:ventas@caret.mx">✉️ Ventas@caret.mx</a>
-            <a href="mailto:soporte@caret.mx">✉️ Soporte@caret.mx</a>
-        </section>
-        <section class="contacto_telefono">
-            <a href="tel:+526648500016">📞 +52 (664) 850 0016</a>
-            <a href="tel:+526648500016">📞 +52 (664) 850 0017</a>
-            <a href="tel:+526648500016">📱 +52 (664) 520 0149</a>
-        </section>
+      <section class="empresa">
+        <img src="./img/Caret_blanco.png" alt="logo caret" />
+        <p>Copyright copyright 2022 Todos los derechos reservados.</p>
+        <a href="#">Aviso de privaciidad</a>
+      </section>
+      <section class="contacto">
+        <p>📍Tijuana, Baja california</p>
+        <a href="mailto:ventas@caret.mx">✉️ Ventas@caret.mx</a>
+        <a href="mailto:soporte@caret.mx">✉️ Soporte@caret.mx</a>
+      </section>
+      <section class="contacto_telefono">
+        <a href="tel:+526648500016">📞 +52 (664) 850 0016</a>
+        <a href="tel:+526648500016">📞 +52 (664) 850 0017</a>
+        <a href="tel:+526648500016">📱 +52 (664) 520 0149</a>
+      </section>
     </footer>
 
     <script src="index.js"></script>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo"><img src="./img/logo_dark.png" alt="logo caret"></div>
-        <div class="btn_idioma">
-          <select name="idioma" id="idioma">
-            <option value="esp">Es</option>
-            <option value="eng">En</option>
-          </select>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="videos_container">
-        <div class="video_presentacion"><iframe width="560" height="315" src="https://www.youtube.com/embed/dusvHedWyAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="video_presentacion"><iframe width="560" height="315" src="https://www.youtube.com/embed/bxxLHFZwIwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="video_presentacion"><iframe width="560" height="315" src="https://www.youtube.com/embed/ilkEoKphWCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </section>
-      <section class="contact">
-        <form action=".">
-          <h3>Contáctenos hoy para programar una demostración gratuita</h3>
-
-          <input
-            type="text"
-            name="nombre_completo"
-            id="nombre_completo"
-            placeholder="Nombre Completo"
-            required
-          />
-          <input
-            type="text"
-            name="nombre_empresa"
-            id="nombre_empresa"
-            placeholder="Nombre de la empresa"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Correo electronico"
-            required
-          />
-          <input
-            type="tel"
-            name="telefono_empresa"
-            id="telefono_empresa"
-            placeholder="Telefono de la empresa"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
-          />
-          <input
-            type="text"
-            name="extension_telefonica"
-            id="extension_telefonica"
-            placeholder="Extension telefonica"
-          />
-          <input
-            type="text"
-            name="ciudad"
-            id="ciudad"
-            placeholder="Ciudad"
-            required
-          />
-
-          <fieldset>
-            <legend>Módulos de su interés</legend>
-
-            <div>
-              <label for="inspection">Inspection</label>
-              <input type="checkbox" id="inspection" name="inspection" />
-            </div>
-
-            <div>
-              <label for="kpi">KPI</label>
-              <input type="checkbox" id="kpi" name="kpi" />
-            </div>
-            <div>
-              <label for="internal_audit">Internal Audit</label>
-              <input
-                type="checkbox"
-                id="internal_audit"
-                name="internal_audit"
-              />
-            </div>
-          </fieldset>
-          <textarea
-            name="Mensaje"
-            id="mensaje"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
-          <button type="submit" class="form_submit">Enviar solicitd de la demostracion</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-        <section class="empresa">
-            <img src="./img/Caret_blanco.png" alt="logo caret">
-            <p>Copyright copyright 2022 Todos los derechos reservados.</p>
-            <a href="#">Aviso de privaciidad</a>
-        </section>
-        <section class="contacto">
-            <p>📍Tijuana, Baja california</p>
-            <a href="mailto:ventas@caret.mx">✉️ Ventas@caret.mx</a>
-            <a href="mailto:soporte@caret.mx">✉️ Soporte@caret.mx</a>
-        </section>
-        <section class="contacto_telefono">
-            <a href="tel:+526648500016">📞 +52 (664) 850 0016</a>
-            <a href="tel:+526648500016">📞 +52 (664) 850 0017</a>
-            <a href="tel:+526648500016">📱 +52 (664) 520 0149</a>
-        </section>
-    </footer>
-
-    <script src="index.js"></script>
-  </body>
-</html>
->>>>>>> a9d81f8ea69a88e4770d534cbdebd52060332451
