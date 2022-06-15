@@ -110,7 +110,7 @@
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required
             />
-            <label class="label" for="nombre_completo">Username</label>
+            <label class="label" for="telefono_empresa">Telefono de la empresa</label>
           </div>
           <div class="input-container">
             <input
@@ -120,7 +120,7 @@
               id="extension_telefonica"
               placeholder="Extension telefonica"
             />
-            <label class="label" for="nombre_completo">Username</label>
+            <label class="label" for="extension_telefonica">Extension telefonica</label>
           </div>
           <div class="input-container">
             <input
@@ -131,21 +131,21 @@
               placeholder="Ciudad"
               required
             />
-            <label class="label" for="nombre_completo">Username</label>
+            <label class="label" for="ciudad">Ciudad</label>
           </div>
           <fieldset>
             <legend>Módulos de su interés</legend>
 
-            <div>
+            <div class="fieldset-input">
               <label for="inspection">Inspection</label>
               <input type="checkbox" id="inspection" name="inspection" />
             </div>
 
-            <div>
+            <div class="fieldset-input">
               <label for="kpi">KPI</label>
               <input type="checkbox" id="kpi" name="kpi" />
             </div>
-            <div>
+            <div class="fieldset-input">
               <label for="internal_audit">Internal Audit</label>
               <input
                 type="checkbox"
@@ -154,13 +154,20 @@
               />
             </div>
           </fieldset>
-          <textarea
+
+          <div class="input-container textarea">
+            <textarea
             name="Mensaje"
+            class="text-input"
             id="mensaje"
             cols="30"
-            rows="10"
+            rows="4"
             required
           ></textarea>
+            <label class="label textarea" for="mensaje">Mensaje</label>
+          </div>
+
+          
           <button type="submit" class="form_submit">
             Enviar solicitd de la demostracion
           </button>

@@ -75,24 +75,25 @@ main {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+  margin: 40px 0;
 }
 form input {
   width: 100%;
   padding: 1em 0.75em;
-  margin: 10px 0;
+  margin: 15px 0;
   border: 1px solid grey;
   border-radius: 5px;
-  /* box-shadow: inset 0 0 5px grey; */
+  /* box-shadow:  1px 1px 5px grey; */
 }
 /* INPUTS */
  .input-container {
-  width: 280px;
+  /* width: 280px; */
   position: relative;
 }
  .label {
   position: absolute;
   left: 10px;
-  top: 14px;
+  top: 30px;
   transition: all 0.2s;
   padding: 0 2px;
   z-index: 1;
@@ -102,39 +103,41 @@ form input {
   padding: 0.8rem;
   width: 100%;
   height: 100%;
-  border: 2px solid #2f2c45;
-  background: #2725304d;
+  border: 1px solid #464646;
+  background: #ffffff;
   border-radius: 5px;
   font-size: 18px;
   outline: none;
   transition: all 0.3s;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .label::before {
   content: "";
   height: 5px;
-  background: #2725302a;
+  background: rgba(255, 255, 255, 0.165);
   position: absolute;
-  left: 0px;
-  top: 10px;
+  left: 10px;
+  top: 15px;
   width: 100%;
   z-index: -1;
 }
 
 .text-input:focus {
-  border: 2px solid #7f4ccb46;
+  border: 2px solid #000000;
 }
 
 .text-input:focus + .label,
 .filled {
-  top: -10px;
-  color: #7e4ccb;
+  top: -2px;
+  left: 0;
+  color: #000000;
   font-size: 14px;
+  background-color: white;
 }
 label  .filled {
   top: -10px;
-  color: #7e4ccb;
+  color: #000000;
   font-size: 14px;
 }
 
@@ -147,13 +150,62 @@ label  .filled {
   opacity: 1;
 }
 
+/* FIELDSET SECCITION */
 
+fieldset{
+  border: none;
+  margin: 20px 0;
+}
+
+.fieldset-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+.fieldset-input:hover{
+  background-color: #ececec;
+  box-shadow:  1px 1px 5px grey;
+}
+
+.fieldset-input label{
+  width: 100%;
+  height: 50px;
+}
+.fieldset-input input{
+  width: 20px;
+  height: 20px;
+}
+
+/* TEXTAREA */
+textarea{
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+.text-input:focus + .textarea,
+.filled {
+  top: -18px;
+  left: 0;
+  color: #000000;
+  font-size: 14px;
+  background-color: white;
+}
+label .textarea .filled {
+  top: -10px;
+  color: #000000;
+  font-size: 14px;
+}
 /* SUBMIT BUTTON */
 .form_submit {
   background-color: #3f51b5;
   box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
     0 1px 5px 0 rgb(0 0 0 / 12%);
-  margin: 0 8px;
+  margin: 20px auto;
+  width: 100%;
+  height: 45px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 500;
