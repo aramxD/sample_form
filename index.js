@@ -45,6 +45,11 @@ let label6 = document.querySelector('label[for="ciudad"]')
 let input6_ENG ='City'
 let input6_ESP ='Ciudad'
 
+let input7 =document.getElementById('mensaje')
+let label7 = document.querySelector('label[for="mensaje"]')
+let input7_ENG ='Message'
+let input7_ESP ='Mensaje'
+
 let legendFieldset = document.getElementById('fieldsetLegend')
 let legendFieldset_ENG ='Modules of your interest'
 let legendFieldset_ESP ='Módulos de su interés'
@@ -55,11 +60,26 @@ let submitBtn_ESP ='Enviar solicitud de la demostracion'
 
 function idiomaSeleccionado(){
   if(idioma.value ==='esp'){
-    console.log('espaaksljdhf')
     bienvenidaH3.innerHTML = bienvenida_ESP
+    input1.placeholder = input1_ESP
+    label1.innerHTML = input1_ESP
+    input2.placeholder = input2_ESP
+    label2.innerHTML = input2_ESP
+    input3.placeholder = input3_ESP
+    label3.innerHTML = input3_ESP
+    input4.placeholder = input4_ESP
+    label4.innerHTML = input4_ESP
+    input5.placeholder = input5_ESP
+    label5.innerHTML = input5_ESP
+    input6.placeholder = input6_ESP
+    label6.innerHTML = input6_ESP
+    input7.placeholder = input7_ESP
+    label7.innerHTML = input7_ESP
+    legendFieldset.innerHTML = legendFieldset_ESP
+    submitBtn.innerHTML = submitBtn_ESP
+    
+    
   }else{
-    
-    
     bienvenidaH3.innerHTML = bienvenida_ENG
     input1.placeholder = input1_ENG
     label1.innerHTML = input1_ENG
@@ -73,9 +93,11 @@ function idiomaSeleccionado(){
     label5.innerHTML = input5_ENG
     input6.placeholder = input6_ENG
     label6.innerHTML = input6_ENG
+    input7.placeholder = input7_ENG
+    label7.innerHTML = input7_ENG
     legendFieldset.innerHTML = legendFieldset_ENG
     submitBtn.innerHTML = submitBtn_ENG
-    console.log(input1.placeholder)
+     
   }
 }
 
