@@ -1,4 +1,9 @@
-
+:root {
+  --fs-title: 25px;
+  --fs-content: 18px;
+  --fs-label: 14px;
+  --fs-footer: 16px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +21,11 @@ body {
 }
 
 /* NAVBAR */
-header{position: sticky;
+header {
+  position: sticky;
   position: -webkit-sticky;
-	background: rgb(255, 255, 255);
-	top: 0;
+  background: rgb(255, 255, 255);
+  top: 0;
   z-index: 3;
 }
 nav {
@@ -41,8 +47,11 @@ nav .btn_idioma select {
 
   text-align: center;
 }
+nav select {
+  font-size: 20px;
+}
 nav .btn_idioma option {
-  font-size: 25px;
+  font-size: 20px;
   height: 60px;
   width: 60px;
   text-align: center;
@@ -78,7 +87,7 @@ main {
   max-width: 420px;
 }
 .contact form h3 {
-  font-size: 20px;
+  font-size: var(--fs-title);
   font-weight: 500;
   text-align: center;
   margin: 40px 0;
@@ -92,11 +101,16 @@ form input {
   /* box-shadow:  1px 1px 5px grey; */
 }
 /* INPUTS */
- .input-container {
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
   /* width: 280px; */
   position: relative;
 }
- .label {
+.label {
   position: absolute;
   left: 10px;
   top: 30px;
@@ -121,7 +135,7 @@ form input {
   border: 1px solid #464646;
   background: #ffffff;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: var(--fs-content);
   outline: none;
   transition: all 0.3s;
   color: rgb(0, 0, 0);
@@ -147,17 +161,17 @@ form input {
   top: -2px;
   left: 0;
   color: #000000;
-  font-size: 14px;
+  font-size: var(--fs-label);
   background-color: white;
 }
-label  .filled {
+label .filled {
   top: -10px;
   color: #000000;
-  font-size: 14px;
+  font-size: var(--fs-label);
 }
 
 .text-input::placeholder {
-  font-size: 16px;
+  font-size: var(--fs-content);
   opacity: 0;
   transition: all 0.3s;
 }
@@ -167,12 +181,12 @@ label  .filled {
 
 /* FIELDSET SECCITION */
 
-fieldset{
+fieldset {
   border: none;
   margin: 20px 0;
 }
 
-.fieldset-input{
+.fieldset-input {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -180,22 +194,22 @@ fieldset{
   border-radius: 5px;
   line-height: 50px;
 }
-.fieldset-input:hover{
+.fieldset-input:hover {
   background-color: #ececec;
-  box-shadow:  1px 1px 5px grey;
+  box-shadow: 1px 1px 5px grey;
 }
 
-.fieldset-input label{
+.fieldset-input label {
   width: 100%;
   height: 50px;
 }
-.fieldset-input input{
+.fieldset-input input {
   width: 20px;
   height: 20px;
 }
 
 /* TEXTAREA */
-textarea{
+textarea {
   width: 100%;
   height: 200px;
   padding: 10px;
@@ -205,13 +219,13 @@ textarea{
   top: -3px;
   left: 0;
   color: #000000;
-  font-size: 14px;
+  font-size: var(--fs-label);
   background-color: white;
 }
 label .textarea .filled {
   top: -10px;
   color: #000000;
-  font-size: 14px;
+  font-size: var(--fs-label);
 }
 /* SUBMIT BUTTON */
 .form_submit {
@@ -222,7 +236,7 @@ label .textarea .filled {
   width: 100%;
   height: 45px;
   border-radius: 5px;
-  font-size: 14px;
+
   font-weight: 500;
   cursor: pointer;
   border: none;
@@ -231,7 +245,7 @@ label .textarea .filled {
   line-height: 36px;
   padding: 0 16px;
   color: white;
-  font-size: 20px;
+  font-size: var(--fs-content);
 }
 
 /* FOOTER */
@@ -253,6 +267,7 @@ footer .empresa {
   color: white;
   width: 32%;
   padding: 0 30px;
+  font-size: var(--fs-footer);
 }
 footer .empresa img {
   width: 120px;
@@ -276,6 +291,7 @@ footer .contacto {
   color: white;
   width: 32%;
   padding: 0 30px;
+  font-size: var(--fs-footer);
 }
 footer .contacto p {
   margin: 5px 0;
@@ -294,6 +310,7 @@ footer .contacto_telefono {
   color: white;
   width: 32%;
   padding: 0 30px;
+  font-size: var(--fs-footer);
 }
 footer .contacto_telefono a {
   color: white;
@@ -311,16 +328,46 @@ footer .contacto_telefono a {
   75%{transform: translateX(4px);}
 } */
 
-
-@media screen and (max-width:800px) {
-
-
-
+@media screen and (max-width: 800px) {
+  :root {
+    --fs-title: 22px;
+    --fs-content: 16px;
+    --fs-label: 12px;
+    --fs-footer: 14px;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  .contact {
+    width: 90%;
+    max-width: 600px;
+  }
+  .contact form h3 {
+    margin: 20px 0;
+  }
+  .videos_container {
+    width: 90%;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .empresa {
+    width: 100%;
+    font-size: var(--fs-footer);
+  }
+  footer .contacto{
+    width: 48%;
+  }
+  footer .contacto_telefono{
+    width: 48%;
+  }
 }
 
-
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  :root {
+    --fs-title: 22px;
+    --fs-content: 16px;
+    --fs-label: 12px;
+    --fs-footer: 12px;
   }
 }
