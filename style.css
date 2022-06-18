@@ -357,9 +357,10 @@ footer .contacto_telefono a {
   }
   footer .contacto{
     width: 48%;
+    padding: 0 15px;
   }
   footer .contacto_telefono{
-    width: 48%;
+    width: 48%;padding: 0 15px;
   }
 }
 
