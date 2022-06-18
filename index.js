@@ -58,8 +58,17 @@ let submitBtn = document.getElementById('submitBtn')
 let submitBtn_ENG ='Submit demo request'
 let submitBtn_ESP ='Enviar solicitud de la demostracion'
 
-function idiomaSeleccionado(){
-  if(idioma.value ==='esp'){
+let idiomafinal
+function idiomaActual(){
+  return idiomafinal = idioma.value
+
+}
+
+
+
+
+function setSeleccionado(){
+  if(idiomafinal ==='esp'){
     bienvenidaH3.innerHTML = bienvenida_ESP
     input1.placeholder = input1_ESP
     label1.innerHTML = input1_ESP
@@ -101,4 +110,10 @@ function idiomaSeleccionado(){
   }
 }
 
-idioma.addEventListener('click',idiomaSeleccionado)
+function cambioIdioma(){
+  idiomaActual()
+  setSeleccionado()
+}
+
+
+idioma.addEventListener('click',cambioIdioma)
