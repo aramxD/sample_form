@@ -64,14 +64,14 @@
       </section>
       <section class="contact">
         <form action=".">
-          <h3>Contáctenos hoy para programar una demostración gratuita</h3>
+          <h3 id="welcome">Contáctenos hoy para programar una demostración gratuita</h3>
           <div class="input-container">
             <input
               type="text"
               class="text-input"
               name="nombre_completo"
               id="nombre_completo"
-              placeholder="Nombre Completo"
+              placeholder=""
               required
             />
             <label class="label" for="nombre_completo">Nombre Completo</label>
@@ -110,7 +110,9 @@
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required
             />
-            <label class="label" for="telefono_empresa">Telefono de la empresa</label>
+            <label class="label" for="telefono_empresa"
+              >Telefono de la empresa</label
+            >
           </div>
           <div class="input-container">
             <input
@@ -120,7 +122,9 @@
               id="extension_telefonica"
               placeholder="Extension telefonica"
             />
-            <label class="label" for="extension_telefonica">Extension telefonica</label>
+            <label class="label" for="extension_telefonica"
+              >Extension telefonica</label
+            >
           </div>
           <div class="input-container">
             <input
@@ -134,7 +138,7 @@
             <label class="label" for="ciudad">Ciudad</label>
           </div>
           <fieldset>
-            <legend>Módulos de su interés</legend>
+            <legend id="fieldsetLegend">Módulos de su interés</legend>
 
             <div class="fieldset-input">
               <label for="inspection">Inspection</label>
@@ -157,19 +161,18 @@
 
           <div class="input-container textarea">
             <textarea
-            name="Mensaje"
-            class="text-input"
-            id="mensaje"
-            cols="30"
-            rows="4"
-            required
-          ></textarea>
-            <label class="label textarea" for="mensaje">Mensaje</label>
+              name="Mensaje"
+              class="text-input"
+              id="mensaje"
+              cols="30"
+              rows="4"
+              required
+            ></textarea>
+            <label class="labelTextArea textarea" id="textarea" for="mensaje">Mensaje</label>
           </div>
 
-          
-          <button type="submit" class="form_submit">
-            Enviar solicitd de la demostracion
+          <button type="submit" class="form_submit" id="submitBtn">
+            Enviar solicitud de la demostracion
           </button>
         </form>
       </section>

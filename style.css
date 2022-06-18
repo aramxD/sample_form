@@ -16,6 +16,12 @@ body {
 }
 
 /* NAVBAR */
+header{position: sticky;
+  position: -webkit-sticky;
+	background: rgb(255, 255, 255);
+	top: 0;
+  z-index: 3;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -94,6 +100,15 @@ form input {
   position: absolute;
   left: 10px;
   top: 30px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #b3b3b3;
+}
+.labelTextArea {
+  position: absolute;
+  left: 10px;
+  top: 10px;
   transition: all 0.2s;
   padding: 0 2px;
   z-index: 1;
@@ -187,7 +202,7 @@ textarea{
 }
 .text-input:focus + .textarea,
 .filled {
-  top: -18px;
+  top: -3px;
   left: 0;
   color: #000000;
   font-size: 14px;
@@ -216,6 +231,7 @@ label .textarea .filled {
   line-height: 36px;
   padding: 0 16px;
   color: white;
+  font-size: 20px;
 }
 
 /* FOOTER */
@@ -294,3 +310,17 @@ footer .contacto_telefono a {
   50%{transform: translateX(-4px);}
   75%{transform: translateX(4px);}
 } */
+
+
+@media screen and (max-width:800px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
