@@ -111,6 +111,7 @@ function setSeleccionado(){
 }
 
 function cambioIdioma(){
+  setSeleccionado()
   idiomaActual()
   setSeleccionado()
 }
