@@ -10,6 +10,7 @@ document.querySelectorAll(".text-input").forEach((element) => {
 
 
 let idioma =  document.getElementById('idioma')
+let btnIdioma = document.getElementById('btnIdioma')
 
 let bienvenidaH3 = document.getElementById('welcome')
 let bienvenida_ENG ='Contact us today to schedule a free demo'
@@ -117,4 +118,4 @@ function cambioIdioma(){
 }
 
 
-idioma.addEventListener('click',cambioIdioma)
+idioma.addEventListener('change',cambioIdioma)
